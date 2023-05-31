@@ -9,6 +9,7 @@ TagManager:
   - BgCamera
   - FgCamera
   - MgCamera
+  - manager
   layers:
   - Default
   - TransparentFX
