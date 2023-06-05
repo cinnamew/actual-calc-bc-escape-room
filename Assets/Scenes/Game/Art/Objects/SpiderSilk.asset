@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad9ed43861394416a291a35509e7ad2, type: 3}
+  m_Name: SpiderSilk
+  m_EditorClassIdentifier: 
+  id: spidersilk
+  displayName: Spider Silk
+  icon: {fileID: 21300000, guid: 50c215dacb0824547a44c0f95faac533, type: 3}
+  prefab: {fileID: 7185648381449312705, guid: 2455f5cbe882e49dd8f58622fef1fbc6, type: 3}
+  popupNum: -1

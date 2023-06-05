@@ -26,9 +26,6 @@ public class InventorySystem : MonoBehaviour
             slots[currSlot].Set(newItem);
             currSlot++;
         }
-
-
-
     }
 
 }

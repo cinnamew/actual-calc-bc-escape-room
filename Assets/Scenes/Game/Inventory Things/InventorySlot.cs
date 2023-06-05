@@ -23,7 +23,7 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
             m_stackLabel.text = item.stackSize.ToString();
         }
         itemID = item.data.id;
-        popup = itemPopups.popups[item.data.popupNum];
+        if(item.data.popupNum != -1) popup = itemPopups.popups[item.data.popupNum];
     }
 
     public void Remove() {

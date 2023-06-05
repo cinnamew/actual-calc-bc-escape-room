@@ -32,7 +32,7 @@ public class ShowHideInventory : MonoBehaviour
 
     public void Start() {
         if(isShowing) show.enabled = false;
-        
+        //print(transform.position);
     }
 
     public void Move() {

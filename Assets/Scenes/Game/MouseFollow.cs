@@ -19,7 +19,7 @@ public class MouseFollow : MonoBehaviour
         mainCam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         startPos = this.transform.position;
-        print(startPos);
+        //print(startPos);
     }
 
     void Update()

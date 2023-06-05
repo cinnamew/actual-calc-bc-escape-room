@@ -6,11 +6,14 @@ public class Manager : MonoBehaviour
 {
     
     [SerializeField] int currWall;
+    private bool talkedToSpider;
+    private bool canClick;
     
     // Start is called before the first frame update
     void Start()
     {
-        
+        // USE BELOW TO GET THE MANAGER
+        // if(manager == null) manager = GameObject.FindGameObjectWithTag("manager").gameObject.GetComponent<Manager>();
     }
 
     void Awake() {
@@ -19,6 +22,8 @@ public class Manager : MonoBehaviour
         if(e.Length > 1) {
             Destroy(e[0]);
         }else {
+            talkedToSpider = true;
+            canClick = true;
             //set up
         }
 
@@ -29,6 +34,20 @@ public class Manager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public bool GetCanClick() {
+        return canClick;
+    }
+
+    public void SetCanClick(bool a) {
+        canClick = a;
+    }
+
+    public bool getTalkedToSpider() {
+        bool temp = talkedToSpider;
+        if(!talkedToSpider) talkedToSpider = true;
+        return temp;
     }
 
     public int GetCurrWall() {

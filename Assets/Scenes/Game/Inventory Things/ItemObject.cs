@@ -7,7 +7,7 @@ public class ItemObject : MonoBehaviour
     public InventoryItemData referenceItem;
 
     public void OnMouseDown() {
-        Debug.Log("item clicked!");
+        //Debug.Log("item clicked!");
         OnPickupItem();
     }
 
