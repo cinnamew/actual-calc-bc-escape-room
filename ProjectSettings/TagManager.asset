@@ -10,6 +10,8 @@ TagManager:
   - FgCamera
   - MgCamera
   - manager
+  - item popups
+  - border
   layers:
   - Default
   - TransparentFX
