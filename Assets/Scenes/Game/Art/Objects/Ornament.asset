@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7ad9ed43861394416a291a35509e7ad2, type: 3}
-  m_Name: PairBracelet
+  m_Name: Ornament
   m_EditorClassIdentifier: 
-  id: pairbracelet
-  displayName: Pair Bracelet
-  icon: {fileID: 0}
-  prefab: {fileID: 0}
-  popupNum: 1
+  id: ornament
+  displayName: Ornament
+  icon: {fileID: 21300000, guid: 41dc4f8e301f64d8f9a4719d298db18d, type: 3}
+  prefab: {fileID: 2262827337403379377, guid: f6ab83e4da95343e3bc8a50e3e2a5f99, type: 3}
+  popupNum: -1

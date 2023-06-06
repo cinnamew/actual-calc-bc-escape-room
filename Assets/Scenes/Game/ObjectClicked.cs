@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Fungus;
+using UnityEngine.EventSystems;
 
 public class ObjectClicked : MonoBehaviour
 {
@@ -12,12 +13,14 @@ public class ObjectClicked : MonoBehaviour
     //[SerializeField] InventoryItem itemNeeded;
     //[SerializeField] bool working = true;
     private Manager manager;
+    private Camera cam;
     
     // Start is called before the first frame update
     void Start()
     {
         if(manager == null) manager = GameObject.FindGameObjectWithTag("manager").gameObject.GetComponent<Manager>();
         if(inv == null) inv = GameObject.Find("inventory").GetComponent<InventorySystem>();
+        cam = Camera.main;
     }
 
     // Update is called once per frame
@@ -28,6 +31,20 @@ public class ObjectClicked : MonoBehaviour
 
     public void OnMouseDown() {
         if(!manager.GetCanClick()) return;
+
+        if(EventSystem.current.IsPointerOverGameObject()) {
+            print("aaa");
+            return;
+        }
+
+        //Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+        //RaycastHit hitInfo;
+        //if(!Physics.Raycast(ray, out hitInfo, Mathf.Infinity)) {
+        //    print("on UI");
+        //    return;
+        //}
+
         //working = false;
         manager.SetCanClick(false);
         switch(name) {
@@ -67,6 +84,14 @@ public class ObjectClicked : MonoBehaviour
             case "vent":
                 flowchart.ExecuteBlock("air vent");
                 break;
+            case "bracelet box":
+                manager.SetCanClick(true);
+                if(manager.GetDoneWBox()) {
+                    flowchart.ExecuteBlock("box empty");
+                    break;
+                }
+                objectToShow.SetActive(true);
+                break;
             default:
                 //working = true;
                 objectToShow.SetActive(true);
@@ -81,6 +106,10 @@ public class ObjectClicked : MonoBehaviour
 
     public void SetWorking(bool a) {
         manager.SetCanClick(a);
+    }
+
+    public void SetDoneWBox(bool a) {
+        manager.SetDoneWBox(a);
     }
 
 }

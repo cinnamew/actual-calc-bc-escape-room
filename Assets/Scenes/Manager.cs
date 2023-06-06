@@ -25,8 +25,9 @@ public class Manager : MonoBehaviour
             Destroy(e[0]);
         }else {
             talkedToSpider = false;
-            canClick = true;
+            canClick = false;
             gaveFoodToSpider = false;
+            doneWithBox = false;
             //set up
         }
 

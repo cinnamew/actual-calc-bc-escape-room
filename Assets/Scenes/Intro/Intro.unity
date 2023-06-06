@@ -1028,6 +1028,8 @@ GameObject:
   - component: {fileID: 750365840}
   - component: {fileID: 750365839}
   - component: {fileID: 750365838}
+  - component: {fileID: 750365843}
+  - component: {fileID: 750365842}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -1064,14 +1066,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodeRect:
     serializedVersion: 2
-    x: 67
+    x: 68
     y: 70
-    width: 111
+    width: 75
     height: 40
   tint: {r: 1, g: 1, b: 1, a: 1}
   useCustomTint: 0
   itemId: 0
-  blockName: New Block
+  blockName: start
   description: 
   eventHandler: {fileID: 750365821}
   commandList:
@@ -1081,11 +1083,13 @@ MonoBehaviour:
   - {fileID: 750365827}
   - {fileID: 750365840}
   - {fileID: 750365828}
+  - {fileID: 750365842}
   - {fileID: 750365829}
   - {fileID: 750365830}
   - {fileID: 750365839}
   - {fileID: 750365838}
   - {fileID: 750365831}
+  - {fileID: 750365843}
   - {fileID: 750365832}
   - {fileID: 750365833}
   - {fileID: 750365834}
@@ -1120,7 +1124,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 750365822}
   selectedCommands:
-  - {fileID: 750365836}
+  - {fileID: 750365837}
   variables: []
   description: 
   stepPause: 0
@@ -1587,7 +1591,67 @@ MonoBehaviour:
   stage: {fileID: 0}
   character: {fileID: 2101023891}
   replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c3023823c73b94a1a8156fad14cfc0ac, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1441966756}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &750365842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750365820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 19
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 2101023891}
+  replacedCharacter: {fileID: 0}
   portrait: {fileID: 21300000, guid: 752d483878f58442b955df6f34aab5c7, type: 3}
+  offset: 0
+  fromPosition: {fileID: 0}
+  toPosition: {fileID: 1441966756}
+  facing: 0
+  useDefaultSettings: 1
+  fadeDuration: 0.5
+  moveDuration: 1
+  shiftOffset: {x: 0, y: 0}
+  move: 0
+  shiftIntoPlace: 0
+  waitUntilFinished: 0
+--- !u!114 &750365843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 750365820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ac5ce55bc698fa4290939ef6e426501, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 18
+  indentLevel: 0
+  display: 1
+  stage: {fileID: 0}
+  character: {fileID: 2101023891}
+  replacedCharacter: {fileID: 0}
+  portrait: {fileID: 21300000, guid: c3023823c73b94a1a8156fad14cfc0ac, type: 3}
   offset: 0
   fromPosition: {fileID: 0}
   toPosition: {fileID: 1441966756}
@@ -3097,6 +3161,7 @@ MonoBehaviour:
   soundEffect: {fileID: 0}
   portraits:
   - {fileID: 21300000, guid: 752d483878f58442b955df6f34aab5c7, type: 3}
+  - {fileID: 21300000, guid: c3023823c73b94a1a8156fad14cfc0ac, type: 3}
   portraitsFace: 0
   setSayDialog: {fileID: 0}
   description: 

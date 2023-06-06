@@ -24,7 +24,6 @@ public class InventorySystem : MonoBehaviour
             m_itemDictionary.Add(refData, newItem);
 
             for(int i = 0; i < slots.Count; i++) {  //i think it's also fine if u start from currSlot+1 but just in case
-                
                 if(slots[i].itemID == null || slots[i].itemID == "") {
                     currSlot = i;
                     break;
