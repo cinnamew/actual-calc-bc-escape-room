@@ -384,7 +384,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 8.125305, y: 49.695694}
+  m_AnchoredPosition: {x: 8.125366, y: 49.695694}
   m_SizeDelta: {x: 79.4493, y: 78.5314}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &413742279
@@ -831,6 +831,7 @@ GameObject:
   - component: {fileID: 1239230611}
   - component: {fileID: 1239230616}
   - component: {fileID: 1239230615}
+  - component: {fileID: 1239230617}
   m_Layer: 0
   m_Name: Flowchart
   m_TagString: Untagged
@@ -894,6 +895,7 @@ MonoBehaviour:
   - {fileID: 1239230580}
   - {fileID: 1239230579}
   - {fileID: 1239230578}
+  - {fileID: 1239230617}
   - {fileID: 1239230586}
   - {fileID: 1239230583}
   - {fileID: 1239230585}
@@ -956,7 +958,7 @@ MonoBehaviour:
   selectedBlocks:
   - {fileID: 1239230564}
   selectedCommands:
-  - {fileID: 1239230615}
+  - {fileID: 1239230587}
   variables: []
   description: 
   stepPause: 0
@@ -1511,9 +1513,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemId: 28
   indentLevel: 0
-  storyText: This HAS to take the cake for the worst thing you have ever done to
-    me and that is saying a lot. I swear to the goddess that the moment we get back
-    on land--
+  storyText: "This HAS to take the cake for the worst thing you have ever done to
+    me and that is saying a lot. I swear to the goddess\u2013 or, I guess that\u2019s
+    you\u2013 that the moment we get back on land\u2013"
   description: 
   character: {fileID: 981974334}
   portrait: {fileID: 0}
@@ -2259,6 +2261,33 @@ MonoBehaviour:
     floatRef: {fileID: 0}
     floatVal: 1
   durationOLD: 0
+--- !u!114 &1239230617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239230562}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec422cd568a9c4a31ad7c36d0572b9da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemId: 51
+  indentLevel: 0
+  storyText: Wait, what do you mean you're the g-
+  description: 
+  character: {fileID: 981974334}
+  portrait: {fileID: 0}
+  voiceOverClip: {fileID: 0}
+  showAlways: 1
+  showCount: 1
+  extendPrevious: 0
+  fadeWhenDone: 1
+  waitForClick: 1
+  stopVoiceover: 1
+  waitForVO: 0
+  setSayDialog: {fileID: 0}
 --- !u!1 &1263464429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3068,10 +3097,10 @@ RectTransform:
   m_Father: {fileID: 2100757039}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -1066.7, y: 0}
-  m_SizeDelta: {x: 2133.5, y: 412.5551}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0.30004883, y: 0}
+  m_SizeDelta: {x: -0.5, y: 412.5551}
   m_Pivot: {x: 0, y: 0}
 --- !u!1 &2044914199
 GameObject:
