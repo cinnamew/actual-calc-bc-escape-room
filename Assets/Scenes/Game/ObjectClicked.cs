@@ -41,16 +41,32 @@ public class ObjectClicked : MonoBehaviour
                     //NEED TO CHECK 
                     if(inv.HasItem("food")) {
                         flowchart.ExecuteBlock("spider yes food");
-                        print("has food yumm");
+                        //print("has food yumm");
                     }else {
                         if(manager.GetGaveFoodToSpider()) flowchart.ExecuteBlock("spider more");
                         else flowchart.ExecuteBlock("spider no food");
-                        Debug.Log("no food");
+                        //Debug.Log("no food");
                     }
+                }
+                break;
+            case "box close up":
+                this.gameObject.SetActive(false);
+                manager.SetCanClick(true);
+                break;
+            case "actual box":
+                if(!inv.HasItem("paper")) flowchart.ExecuteBlock("box no paper");
+                break;
+            case "numlock":
+                if(inv.HasItem("paper")) {
+                    objectToShow.SetActive(true);
+                    //manager.SetCanClick(true);
+                }else {
+                    flowchart.ExecuteBlock("box no paper");
                 }
                 break;
             default:
                 //working = true;
+                objectToShow.SetActive(true);
                 manager.SetCanClick(true);
                 break;
         }

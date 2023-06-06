@@ -28,14 +28,14 @@ public class NumberLockNumbers : MonoBehaviour
         currNum++;
         if(currNum == 10) currNum = 0;
         txt.text = currNum + "";
-        numLock.CheckNum();
+        //numLock.CheckNum();
     }
 
     public void Remove() {
         currNum--;
         if(currNum == -1) currNum = 9;
         txt.text = currNum + "";
-        numLock.CheckNum();
+        //numLock.CheckNum();
     }
 
     public int getCurrNum() {

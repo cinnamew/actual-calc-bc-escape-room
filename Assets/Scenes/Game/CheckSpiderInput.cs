@@ -18,10 +18,10 @@ public class CheckSpiderInput : MonoBehaviour
     }
 
     public void CheckPassword() {
-        print(txt.text);
+        //print(txt.text);
         switch(txt.text) {
             case "41​":
-                print("correct!");
+                //print("correct!");
                 flowchart.ExecuteBlock("spider correct");
                 break;
             case "TEAM SWAGSTARS HELL EYAH​":
@@ -29,7 +29,7 @@ public class CheckSpiderInput : MonoBehaviour
                 break;
             default:
                 flowchart.ExecuteBlock("spider incorrect");
-                print("wrong!");
+                //print("wrong!");
                 break;
         }
     }

@@ -58,7 +58,7 @@ public class InventorySystem : MonoBehaviour
                 m_itemDictionary.Remove(refData);
                 for(int i = 0; i < slots.Count; i++) {
                     if(slots[i].itemID == refData.id) {
-                        print("removing");
+                        //print("removing");
                         slots[i].Remove();
                         currSlot = i;  
                     }
