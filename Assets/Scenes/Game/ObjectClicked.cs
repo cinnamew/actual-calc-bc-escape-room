@@ -33,7 +33,7 @@ public class ObjectClicked : MonoBehaviour
         if(!manager.GetCanClick()) return;
 
         if(EventSystem.current.IsPointerOverGameObject()) {
-            print("aaa");
+            //print("aaa");
             return;
         }
 
@@ -91,6 +91,31 @@ public class ObjectClicked : MonoBehaviour
                     break;
                 }
                 objectToShow.SetActive(true);
+                break;
+            case "pins":
+                print("pins clicked");
+                if(!inv.HasItem("spidersilk") && !manager.GetAddedSilk()) {
+                    flowchart.ExecuteBlock("pins nothing");
+                }else if(inv.HasItem("spidersilk")) {
+                    flowchart.ExecuteBlock("pins spider");
+                    manager.SetAddedSilk(true);
+                }else if(!inv.HasItem("ornfinal") && !inv.HasItem("bracelet")) {
+                    flowchart.ExecuteBlock("pins spider nothing");
+                }else if(!inv.HasItem("ornfinal")) {
+                    flowchart.ExecuteBlock("pins spider no o");
+                }else if(inv.HasItem("ornfinal") && inv.HasItem("bracelet")) {
+                    flowchart.ExecuteBlock("pins spider done");
+                }
+
+                break;
+            case "sink":
+                if(!inv.HasItem("ornament") && !inv.HasItem("bracelet")) {
+                    flowchart.ExecuteBlock("sink nothing");
+                }else if(inv.HasItem("bracelet") && !inv.HasItem("ornament")) {
+                    flowchart.ExecuteBlock("sink yes b no o");
+                }else if(inv.HasItem("ornament")) {
+                    flowchart.ExecuteBlock("sink yes o");
+                }
                 break;
             default:
                 //working = true;

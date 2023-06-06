@@ -29,6 +29,8 @@ public class CheckAnyInput : MonoBehaviour
         }else {
             if(id == "bracelet") {
                 flowchart.ExecuteBlock("bracelet frq wrong");
+            }else if(id == "rgb" || id == "rgb final") {
+                flowchart.ExecuteBlock("rgb wrong");
             }
         }
     }
@@ -37,6 +39,12 @@ public class CheckAnyInput : MonoBehaviour
         if(setWorkingAfter) flowchart.ExecuteBlock("set working true");
         if(id == "bracelet") {
             whatToHide.SetActive(false);
+        }else if(id == "rgb" || id == "rgb final") {
+            whatToHide.SetActive(false);
+        }
+
+        if(id == "rgb final") {
+            flowchart.ExecuteBlock("sink done");
         }
     }
 

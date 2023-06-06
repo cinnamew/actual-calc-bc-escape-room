@@ -10,6 +10,7 @@ public class Manager : MonoBehaviour
     private bool canClick;
     private bool gaveFoodToSpider;
     private bool doneWithBox;
+    private bool addedSilk;
     
     // Start is called before the first frame update
     void Start()
@@ -76,5 +77,13 @@ public class Manager : MonoBehaviour
 
     public void ChangeWall(int newWall) {
         currWall = newWall;
+    }
+
+    public bool GetAddedSilk() {
+        return addedSilk;
+    }
+
+    public void SetAddedSilk(bool a) {
+        addedSilk = a;
     }
 }

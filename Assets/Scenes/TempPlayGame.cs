@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TempPlayGame : MonoBehaviour
 {
     public void StartGame() {
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Intro");
     }
 
 }

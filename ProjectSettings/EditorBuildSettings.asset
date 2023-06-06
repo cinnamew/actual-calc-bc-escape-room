@@ -17,6 +17,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game/Game.unity
     guid: d0cd8d854920c40ffbfa60056d9344dc
+  - enabled: 1
+    path: Assets/Scenes/End/End.unity
+    guid: c14ffab141e7943a0a93eacb278e3e00
+  - enabled: 1
+    path: Assets/Scenes/Joke/Joke.unity
+    guid: a5f188263408641e79141b9922389dc6
   - enabled: 0
     path: Assets/Scenes/Office.unity
     guid: ee228adfef71f4c0e8c12815323c3f76

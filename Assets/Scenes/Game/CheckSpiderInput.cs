@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Fungus;
+using UnityEngine.SceneManagement;
 
 public class CheckSpiderInput : MonoBehaviour
 {
@@ -26,6 +27,7 @@ public class CheckSpiderInput : MonoBehaviour
                 break;
             case "TEAM SWAGSTARS HELL EYAH​":
                 print("so true");
+                SceneManager.LoadScene("Joke");
                 break;
             default:
                 flowchart.ExecuteBlock("spider incorrect");
