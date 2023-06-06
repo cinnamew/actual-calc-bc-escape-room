@@ -8,6 +8,8 @@ public class ObjectClicked : MonoBehaviour
     [SerializeField] string name;
     [SerializeField] Fungus.Flowchart flowchart;
     [SerializeField] GameObject objectToShow;
+    [SerializeField] InventorySystem inv;
+    //[SerializeField] InventoryItem itemNeeded;
     //[SerializeField] bool working = true;
     private Manager manager;
     
@@ -15,6 +17,7 @@ public class ObjectClicked : MonoBehaviour
     void Start()
     {
         if(manager == null) manager = GameObject.FindGameObjectWithTag("manager").gameObject.GetComponent<Manager>();
+        if(inv == null) inv = GameObject.Find("inventory").GetComponent<InventorySystem>();
     }
 
     // Update is called once per frame
@@ -35,8 +38,15 @@ public class ObjectClicked : MonoBehaviour
                 if(!manager.getTalkedToSpider()) {
                     flowchart.ExecuteBlock("spider first time");
                 }else {
-                    //NEED TO REPLACE
-                    flowchart.ExecuteBlock("spider yes food");
+                    //NEED TO CHECK 
+                    if(inv.HasItem("food")) {
+                        flowchart.ExecuteBlock("spider yes food");
+                        print("has food yumm");
+                    }else {
+                        if(manager.GetGaveFoodToSpider()) flowchart.ExecuteBlock("spider more");
+                        else flowchart.ExecuteBlock("spider no food");
+                        Debug.Log("no food");
+                    }
                 }
                 break;
             default:
@@ -44,6 +54,10 @@ public class ObjectClicked : MonoBehaviour
                 manager.SetCanClick(true);
                 break;
         }
+    }
+
+    public void SetGaveFoodToSpider(bool a) {
+        manager.SetGaveFoodToSpider(a);
     }
 
     public void SetWorking(bool a) {

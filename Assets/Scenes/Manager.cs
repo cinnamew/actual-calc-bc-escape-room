@@ -8,6 +8,7 @@ public class Manager : MonoBehaviour
     [SerializeField] int currWall;
     private bool talkedToSpider;
     private bool canClick;
+    private bool gaveFoodToSpider;
     
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,9 @@ public class Manager : MonoBehaviour
         if(e.Length > 1) {
             Destroy(e[0]);
         }else {
-            talkedToSpider = true;
+            talkedToSpider = false;
             canClick = true;
+            gaveFoodToSpider = false;
             //set up
         }
 
@@ -34,6 +36,14 @@ public class Manager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public bool GetGaveFoodToSpider() {
+        return gaveFoodToSpider;
+    }
+
+    public void SetGaveFoodToSpider(bool a) {
+        gaveFoodToSpider = a;
     }
 
     public bool GetCanClick() {

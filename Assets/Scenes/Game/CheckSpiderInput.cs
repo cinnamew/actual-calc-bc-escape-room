@@ -28,6 +28,7 @@ public class CheckSpiderInput : MonoBehaviour
                 print("so true");
                 break;
             default:
+                flowchart.ExecuteBlock("spider incorrect");
                 print("wrong!");
                 break;
         }

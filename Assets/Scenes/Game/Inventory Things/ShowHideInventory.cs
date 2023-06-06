@@ -31,7 +31,11 @@ public class ShowHideInventory : MonoBehaviour
     }
 
     public void Start() {
-        if(isShowing) show.enabled = false;
+        if(isShowing) {
+            show.enabled = false;
+            showPosition = transform.position;
+            hidePosition = new Vector2(transform.position.x, hidePosition.y);
+        }
         //print(transform.position);
     }
 

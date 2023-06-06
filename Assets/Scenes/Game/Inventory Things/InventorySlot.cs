@@ -10,12 +10,13 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] Image m_icon;
     [SerializeField] TMP_Text m_stackLabel;
-    [SerializeField] string itemID;
+    public string itemID;
     [SerializeField] GameObject popup;
     private ItemPopups itemPopups;
     
     public void Set(InventoryItem item) {
         m_icon.sprite = item.data.icon;
+        m_icon.enabled = true;
         if(item.stackSize <= 1 && m_stackLabel != null) {
             m_stackLabel.enabled = false;
         }else {
@@ -23,11 +24,14 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
             m_stackLabel.text = item.stackSize.ToString();
         }
         itemID = item.data.id;
+        //print("length: " + itemPopups.popups.Length);
+
         if(item.data.popupNum != -1) popup = itemPopups.popups[item.data.popupNum];
     }
 
     public void Remove() {
         m_icon.sprite = null;
+        m_icon.enabled = false;
         m_stackLabel.enabled = false;
         itemID = "";
     }
@@ -53,11 +57,13 @@ public class InventorySlot : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData pointerEventData)
     {
-        if(itemID == "") return;
+        if(itemID == "" || popup == null) return;
         //Output to console the clicked GameObject's name and the following message. You can replace this with your own actions for when clicking the GameObject.
-        Debug.Log("clicked inventory item (in inventory) >:D");
-        if(!popup.activeSelf) popup.SetActive(true);
-        else popup.SetActive(false);
+        //if(popup != null) Debug.Log("clicked inventory item (in inventory) >:D");
+        if(!popup.activeSelf) {
+            popup.SetActive(true);
+            //print("aslkdhsglkasd shwoing popup");
+        }else popup.SetActive(false);
     }
 
 }
