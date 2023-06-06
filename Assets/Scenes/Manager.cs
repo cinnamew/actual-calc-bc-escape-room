@@ -9,6 +9,7 @@ public class Manager : MonoBehaviour
     private bool talkedToSpider;
     private bool canClick;
     private bool gaveFoodToSpider;
+    private bool doneWithBox;
     
     // Start is called before the first frame update
     void Start()
@@ -36,6 +37,14 @@ public class Manager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public bool GetDoneWBox() {
+        return doneWithBox;
+    }
+
+    public void SetDoneWBox(bool a) {
+        doneWithBox = a;
     }
 
     public bool GetGaveFoodToSpider() {

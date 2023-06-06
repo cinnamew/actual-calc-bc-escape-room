@@ -49,10 +49,10 @@ public class ObjectClicked : MonoBehaviour
                     }
                 }
                 break;
-            case "box close up":
-                this.gameObject.SetActive(false);
-                manager.SetCanClick(true);
-                break;
+            //case "box close up":
+            //    this.gameObject.SetActive(false);
+            //    manager.SetCanClick(true);
+            //    break;
             case "actual box":
                 if(!inv.HasItem("paper")) flowchart.ExecuteBlock("box no paper");
                 break;
@@ -63,6 +63,9 @@ public class ObjectClicked : MonoBehaviour
                 }else {
                     flowchart.ExecuteBlock("box no paper");
                 }
+                break;
+            case "vent":
+                flowchart.ExecuteBlock("air vent");
                 break;
             default:
                 //working = true;
