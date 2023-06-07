@@ -1,4 +1,4 @@
-All scripts and scene files are distributed under the following:
+All scripts and scene files from the YarnPile template are distributed under the following:
 
 Copyright 2020 Angela He
 
