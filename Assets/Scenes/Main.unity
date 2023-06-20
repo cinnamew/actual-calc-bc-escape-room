@@ -9607,7 +9607,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.000025749, y: -40.359}
-  m_SizeDelta: {x: 390.94897, y: 118.52008}
+  m_SizeDelta: {x: 390.949, y: 144.147}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1907253565
 MonoBehaviour:
@@ -9629,14 +9629,16 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Developed by Jolie
+  m_text: 'developed by cinna
 
-    Puzzles by Hiro & Jacob
+    puzzles by hiro & jacob
 
-    Art by Grace
+    art by grace
 
-    Made
-    for AP Calculus BC P. 3'
+    music
+    by hiro
+
+    Made for AP Calculus BC P. 3'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 9cc85ace89d5a49f4a2e9d06d4f9fc12, type: 2}
   m_sharedMaterial: {fileID: 737608350973238628, guid: 9cc85ace89d5a49f4a2e9d06d4f9fc12,
