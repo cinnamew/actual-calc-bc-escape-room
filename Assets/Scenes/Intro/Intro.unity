@@ -1091,9 +1091,14 @@ MonoBehaviour:
   targetAudioSource: {fileID: 0}
   audioMode: 0
   beepSounds:
-  - {fileID: 8300000, guid: 774486030b696474e8b3cf7f178123da, type: 3}
-  - {fileID: 8300000, guid: f637c5ce9d10e45c7855ed89bfc6b97e, type: 3}
-  - {fileID: 8300000, guid: c53b7c20372e444c6bd7f2ac0729bbe2, type: 3}
+  - {fileID: 8300000, guid: 70cbe1ee1f3b40247aebf52d2224c0f0, type: 3}
+  - {fileID: 8300000, guid: 76fc60315f36f4a46b965de86e1f3515, type: 3}
+  - {fileID: 8300000, guid: c277d1e3c829bc1448548e2348f3e28c, type: 3}
+  - {fileID: 8300000, guid: 62eea5d3a367ab04f87b4a8f7fa66fe3, type: 3}
+  - {fileID: 8300000, guid: afcec18ec30dba0419ae828e5e11f5d7, type: 3}
+  - {fileID: 8300000, guid: 704f908d270856149af452717cb68be2, type: 3}
+  - {fileID: 8300000, guid: af8c38053b9f06d4bb8b2e86fdd08c5f, type: 3}
+  - {fileID: 8300000, guid: 12b0d3fc7be907f46a94b352876afcb6, type: 3}
   soundEffect: {fileID: 0}
   inputSound: {fileID: 8300000, guid: 14a396b1562834718b2d52b9c4639264, type: 3}
 --- !u!114 &704662603
@@ -1680,7 +1685,7 @@ MonoBehaviour:
   setSayDialog: {fileID: 0}
 --- !u!114 &750365836
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1699,7 +1704,7 @@ MonoBehaviour:
   sceneNameOLD: 
 --- !u!114 &750365837
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1719,7 +1724,7 @@ MonoBehaviour:
   fadeTweenType: 4
 --- !u!114 &750365838
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1749,7 +1754,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &750365839
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1779,7 +1784,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &750365840
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1809,7 +1814,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &750365841
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1839,7 +1844,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &750365842
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -1869,7 +1874,7 @@ MonoBehaviour:
   waitUntilFinished: 0
 --- !u!114 &750365843
 MonoBehaviour:
-  m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 2
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
@@ -3081,7 +3086,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -8825915645437840273, guid: bc102ca154cb54d248e94eb1ccaf859b,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: c98b8e99d81584091a3fedf24d862bd7, type: 3}
+  m_audioClip: {fileID: 8300000, guid: df254fb65b7e041f58ed5c1de40b2406, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3189,7 +3194,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1717626157}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa143064753e14caa96445a6b91484e9, type: 3}
   m_Name: 
